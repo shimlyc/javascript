@@ -43,6 +43,8 @@ let bases=prompt("enter the base ")
  
 let areas=heights*bases/2;
 console.log(areas);//using prompt
+
+
 //swap a value
 let a=4,b=5;
 
@@ -54,6 +56,75 @@ b=temp;
 
 console.log(a);
 console.log(b);
+
+ //to find the  number is odd or even
+ let num=10;
+
+if(num%2){
+    console.log("number is odd");
+}
+else{
+    console.log("number is even");
+}
+
+
+//to find which number is largest
+let  numb1=10,numb2=20,numb3=30;
+
+let largest=Math.max(numb1,numb2,numb3);
+console.log(largest);
+
+
+
+
+//using another method
+
+let largests, number1=10,number2=20,number3=30;
+if(number1>=number2 && number1>=number3){
+   let largests= console.log(number1);
+}else if(number2>=number1 && number2>=number3){
+   let largests= console.log(number2);
+}else{
+   let largests= console.log(number3);
+}
+
+console.log(largests);
+
+//how to find the prime number
+
+let prime=20;
+flag=true;
+
+for(i=2;i<prime;i++){
+    if(prime%i===0){
+flag=false;
+break;
+    }
+}
+
+if(flag){
+    console.log("number is  prime");
+}else{
+    console.log("number is not  prime");
+}
+
+//display multiplication table
+
+
+let p=3;
+
+for(i=1;i<=10;i++){
+let multi=p*i;
+console.log(multi);
+
+}
+  
+let v=prompt("enter a number");
+for(i=1;i<=10;i++){
+    let multip=v*i;
+    console.log(multip);//using prompt
+}
+
 
 
 
